@@ -21,7 +21,7 @@ garlic.classList.add('item');
 garlic.textContent = ingredients[2];
 
 const tomatos = document.createElement('li');
-tomatos.classList.add('li');
+tomatos.classList.add('item');
 tomatos.textContent = ingredients[3];
 
 const herbs = document.createElement('li');
