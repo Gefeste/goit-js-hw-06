@@ -4,7 +4,7 @@ const inputCount = inputEl.dataset.length
 
 
 inputEl.addEventListener('blur', (event) => {
-    if (Number(inputCount) !== event.currentTarget.value) {
+    if (Number(inputCount) === event.currentTarget.value.length) {
         if (inputEl.classList.contains('invalid') === true) {
               inputEl.classList.remove('invalid')
         }
