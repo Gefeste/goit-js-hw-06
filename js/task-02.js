@@ -8,6 +8,8 @@ const ingredients = [
 ];
 
 
+
+
 const newArray = ingredients.map(ingredient => {
   const itemEl = document.createElement('li');
   itemEl.classList.add('item')

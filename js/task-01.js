@@ -1,28 +1,18 @@
 const item = document.querySelectorAll(".item")
-const itemLength = item.length
-console.log("Number of categories:", itemLength)
-
-const elements = document.querySelectorAll('.item ul')
-// console.log(elements)
+console.log("Number of categories:", item.length)
 
 
 
 const title = document.querySelectorAll('h2')
+const element = document.querySelectorAll('.item ul')
 
-const titleAnimals = title[0]
-console.log('Category:', titleAnimals.textContent)
 
-const firstEl = elements[0];
-console.log('Elements:', firstEl.children.length)
+title.forEach((el) => {
+    console.log("Category", el.textContent)
 
-const titleProduct = title[1]
-console.log('Category:', titleProduct.textContent)
+    Array.from(element).map(elem => {
+       console.log("Elements", elem.children.length)
+    })
 
-const secondEl = elements[1];
-console.log('Elements:', secondEl.children.length)
 
-const titleTech = title[2]
-console.log('Category:', titleTech.textContent)
-
-const thirdEl = elements[2];
-console.log('Elements:', thirdEl.children.length)
+})
